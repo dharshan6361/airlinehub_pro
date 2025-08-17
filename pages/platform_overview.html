@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platform Overview - AirlineHub Pro</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Explore AirlineHub Pro's comprehensive airline management platform - from flight operations to passenger services, revenue management, and advanced analytics." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fairlinehub1355back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-md border-b border-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L4 8v16l12 6 12-6V8L16 2zm0 2.5L25.5 9 16 13.5 6.5 9 16 4.5zm-10 6.5L14 15v11L6 22V11zm20 0v11l-8 4V15l8-4z"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-bold text-primary">AirlineHub Pro</h1>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Home</a>
+                        <a href="platform_overview.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Platform</a>
+                        <a href="customer_success_stories.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Success Stories</a>
+                        <a href="pricing_plans.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Pricing</a>
+                        <a href="security_compliance.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Security</a>
+                        <a href="contact_demo_request.html" class="btn-primary">Request Demo</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="platform_overview.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Platform</a>
+                <a href="customer_success_stories.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Success Stories</a>
+                <a href="pricing_plans.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Pricing</a>
+                <a href="security_compliance.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Security</a>
+                <a href="contact_demo_request.html" class="btn-primary block text-center mx-3 my-2">Request Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-aviation text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+                Complete Airline Management Platform
+            </h1>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Discover how AirlineHub Pro transforms complex airline operations into streamlined, 
+                intuitive workflows that enhance efficiency and passenger satisfaction.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_demo_request.html" class="btn-accent text-lg px-8 py-4">
+                    Schedule Live Demo
+                </a>
+                <a href="#platform-features" class="bg-white text-primary font-semibold text-lg px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors">
+                    Explore Features
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Navigation Tabs -->
+    <section id="platform-features" class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">
+                    Comprehensive Platform Overview
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Explore each module of our integrated airline management system designed for modern aviation operations.
+                </p>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="flex flex-wrap justify-center mb-8 border-b border-border">
+                <button class="tab-button active px-6 py-3 font-semibold text-sm border-b-2 border-primary text-primary transition-colors" onclick="showTab('flight-operations')">
+                    Flight Operations
+                </button>
+                <button class="tab-button px-6 py-3 font-semibold text-sm border-b-2 border-transparent text-text-secondary hover:text-primary transition-colors" onclick="showTab('passenger-services')">
+                    Passenger Services
+                </button>
+                <button class="tab-button px-6 py-3 font-semibold text-sm border-b-2 border-transparent text-text-secondary hover:text-primary transition-colors" onclick="showTab('revenue-management')">
+                    Revenue Management
+                </button>
+                <button class="tab-button px-6 py-3 font-semibold text-sm border-b-2 border-transparent text-text-secondary hover:text-primary transition-colors" onclick="showTab('analytics-reporting')">
+                    Analytics & Reporting
+                </button>
+                <button class="tab-button px-6 py-3 font-semibold text-sm border-b-2 border-transparent text-text-secondary hover:text-primary transition-colors" onclick="showTab('system-admin')">
+                    System Administration
+                </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content-container">
+                <!-- Flight Operations Tab -->
+                <div id="flight-operations" class="tab-content active">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-text-primary mb-6">Flight Operations Management</h3>
+                            <p class="text-text-secondary mb-8">
+                                Streamline your flight operations with our intuitive drag-and-drop scheduling interface, 
+                                real-time monitoring, and automated crew management system.
+                            </p>
+
+                            <!-- Feature List -->
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Real-Time Flight Tracking</h4>
+                                        <p class="text-text-secondary">Monitor all flights with live updates, weather integration, and automated delay notifications.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Automated Crew Scheduling</h4>
+                                        <p class="text-text-secondary">Intelligent crew assignment with compliance checking, availability tracking, and shift optimization.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Maintenance Integration</h4>
+                                        <p class="text-text-secondary">Seamless aircraft maintenance scheduling with compliance tracking and automated alerts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Demo Preview -->
+                        <div class="relative">
+                            <div class="bg-background rounded-xl shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+                                <div class="operational-header">
+                                    Flight Operations Dashboard
+                                </div>
+                                <div class="p-6 space-y-4">
+                                    <!-- Flight Timeline -->
+                                    <div class="bg-surface border border-border rounded-lg p-4">
+                                        <h4 class="font-semibold text-text-primary mb-3">Today's Flight Schedule</h4>
+                                        <div class="space-y-3">
+                                            <div class="flex items-center justify-between p-3 bg-success-50 border border-success-200 rounded-lg">
+                                                <div class="flex items-center">
+                                                    <div class="w-3 h-3 bg-success-500 rounded-full mr-3"></div>
+                                                    <div>
+                                                        <div class="font-operational text-sm">AA1234</div>
+                                                        <div class="text-xs text-text-secondary">LAX → JFK</div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-right">
+                                                    <div class="text-sm font-semibold text-success-600">On Time</div>
+                                                    <div class="text-xs text-text-secondary">08:30 - 16:45</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex items-center justify-between p-3 bg-warning-50 border border-warning-200 rounded-lg">
+                                                <div class="flex items-center">
+                                                    <div class="w-3 h-3 bg-warning-500 rounded-full mr-3"></div>
+                                                    <div>
+                                                        <div class="font-operational text-sm">UA5678</div>
+                                                        <div class="text-xs text-text-secondary">ORD → DFW</div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-right">
+                                                    <div class="text-sm font-semibold text-warning-600">Delayed 15m</div>
+                                                    <div class="text-xs text-text-secondary">10:15 - 13:30</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex items-center justify-between p-3 bg-primary-50 border border-primary-200 rounded-lg">
+                                                <div class="flex items-center">
+                                                    <div class="w-3 h-3 bg-primary-500 rounded-full mr-3"></div>
+                                                    <div>
+                                                        <div class="font-operational text-sm">DL9012</div>
+                                                        <div class="text-xs text-text-secondary">ATL → SEA</div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-right">
+                                                    <div class="text-sm font-semibold text-primary-600">Boarding</div>
+                                                    <div class="text-xs text-text-secondary">12:00 - 15:45</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Quick Actions -->
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <button class="btn-primary text-sm py-2">Add Flight</button>
+                                        <button class="btn-secondary text-sm py-2">View Schedule</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Passenger Services Tab -->
+                <div id="passenger-services" class="tab-content hidden">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-text-primary mb-6">Passenger Services Excellence</h3>
+                            <p class="text-text-secondary mb-8">
+                                Deliver exceptional passenger experiences with our comprehensive booking system, 
+                                mobile check-in, and personalized service management tools.
+                            </p>
+
+                            <!-- Feature List -->
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Mobile-First Booking</h4>
+                                        <p class="text-text-secondary">Intuitive booking flow with smart recommendations, seat selection, and instant confirmation.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Digital Check-In</h4>
+                                        <p class="text-text-secondary">Streamlined check-in process with mobile boarding passes and baggage tracking.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Loyalty Integration</h4>
+                                        <p class="text-text-secondary">Comprehensive loyalty program management with personalized rewards and tier benefits.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Demo Preview -->
+                        <div class="relative">
+                            <div class="bg-background rounded-xl shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+                                <div class="bg-secondary text-white py-4 px-6 rounded-t-lg font-semibold">
+                                    Passenger Portal
+                                </div>
+                                <div class="p-6 space-y-4">
+                                    <!-- Booking Summary -->
+                                    <div class="bg-surface border border-border rounded-lg p-4">
+                                        <h4 class="font-semibold text-text-primary mb-3">Current Booking</h4>
+                                        <div class="space-y-3">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-text-secondary">Flight</span>
+                                                <span class="font-operational font-semibold">AA1234</span>
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-text-secondary">Route</span>
+                                                <span class="font-semibold">LAX → JFK</span>
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-text-secondary">Seat</span>
+                                                <span class="font-semibold">12A</span>
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-text-secondary">Status</span>
+                                                <span class="px-2 py-1 bg-success-100 text-success-700 rounded text-sm">Confirmed</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Quick Actions -->
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <button class="btn-primary text-sm py-2">Check-In</button>
+                                        <button class="btn-secondary text-sm py-2">Manage Booking</button>
+                                    </div>
+
+                                    <!-- Loyalty Status -->
+                                    <div class="bg-accent-50 border border-accent-200 rounded-lg p-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-accent-700 font-semibold text-sm">Gold Member</span>
+                                            <span class="text-accent-600 text-sm">15,420 miles</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Revenue Management Tab -->
+                <div id="revenue-management" class="tab-content hidden">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-text-primary mb-6">Revenue Optimization</h3>
+                            <p class="text-text-secondary mb-8">
+                                Maximize profitability with dynamic pricing algorithms, demand forecasting, 
+                                and comprehensive revenue analytics across all routes and services.
+                            </p>
+
+                            <!-- Feature List -->
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Dynamic Pricing</h4>
+                                        <p class="text-text-secondary">AI-powered pricing optimization based on demand, competition, and historical data.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Demand Forecasting</h4>
+                                        <p class="text-text-secondary">Predictive analytics for capacity planning and route optimization.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Ancillary Revenue</h4>
+                                        <p class="text-text-secondary">Optimize additional services revenue through targeted upselling and cross-selling.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Demo Preview -->
+                        <div class="relative">
+                            <div class="bg-background rounded-xl shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+                                <div class="bg-accent text-white py-4 px-6 rounded-t-lg font-semibold">
+                                    Revenue Dashboard
+                                </div>
+                                <div class="p-6 space-y-4">
+                                    <!-- Revenue Metrics -->
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="dashboard-metric">
+                                            <div class="text-2xl font-bold text-success-600">$2.4M</div>
+                                            <div class="text-sm text-text-secondary">Today's Revenue</div>
+                                            <div class="text-xs text-success-600">+12.5% vs yesterday</div>
+                                        </div>
+                                        <div class="dashboard-metric">
+                                            <div class="text-2xl font-bold text-primary-600">87.3%</div>
+                                            <div class="text-sm text-text-secondary">Load Factor</div>
+                                            <div class="text-xs text-primary-600">+3.2% vs last week</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Route Performance -->
+                                    <div class="bg-surface border border-border rounded-lg p-4">
+                                        <h4 class="font-semibold text-text-primary mb-3">Top Routes</h4>
+                                        <div class="space-y-2">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-sm">LAX → JFK</span>
+                                                <span class="text-sm font-semibold text-success-600">$485K</span>
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-sm">ORD → DFW</span>
+                                                <span class="text-sm font-semibold text-success-600">$392K</span>
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-sm">ATL → SEA</span>
+                                                <span class="text-sm font-semibold text-success-600">$278K</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Quick Actions -->
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <button class="btn-accent text-sm py-2">Adjust Pricing</button>
+                                        <button class="btn-secondary text-sm py-2">View Report</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytics & Reporting Tab -->
+                <div id="analytics-reporting" class="tab-content hidden">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-text-primary mb-6">Advanced Analytics & Reporting</h3>
+                            <p class="text-text-secondary mb-8">
+                                Make data-driven decisions with comprehensive analytics, customizable dashboards, 
+                                and automated reporting for all aspects of your airline operations.
+                            </p>
+
+                            <!-- Feature List -->
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Real-Time Dashboards</h4>
+                                        <p class="text-text-secondary">Customizable dashboards with live operational metrics and KPI tracking.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Automated Reports</h4>
+                                        <p class="text-text-secondary">Scheduled reporting for compliance, performance analysis, and executive summaries.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Predictive Insights</h4>
+                                        <p class="text-text-secondary">AI-powered analytics for trend prediction and operational optimization.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Demo Preview -->
+                        <div class="relative">
+                            <div class="bg-background rounded-xl shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+                                <div class="bg-primary text-white py-4 px-6 rounded-t-lg font-semibold">
+                                    Analytics Dashboard
+                                </div>
+                                <div class="p-6 space-y-4">
+                                    <!-- Key Metrics -->
+                                    <div class="grid grid-cols-3 gap-3">
+                                        <div class="dashboard-metric text-center">
+                                            <div class="text-lg font-bold text-primary-600">94.2%</div>
+                                            <div class="text-xs text-text-secondary">On-Time</div>
+                                        </div>
+                                        <div class="dashboard-metric text-center">
+                                            <div class="text-lg font-bold text-success-600">4.8</div>
+                                            <div class="text-xs text-text-secondary">Satisfaction</div>
+                                        </div>
+                                        <div class="dashboard-metric text-center">
+                                            <div class="text-lg font-bold text-accent-600">$12.4M</div>
+                                            <div class="text-xs text-text-secondary">Revenue</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Chart Placeholder -->
+                                    <div class="bg-surface border border-border rounded-lg p-4">
+                                        <h4 class="font-semibold text-text-primary mb-3">Performance Trends</h4>
+                                        <div class="h-32 bg-gradient-operational rounded flex items-center justify-center">
+                                            <svg class="w-16 h-16 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <!-- Quick Actions -->
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <button class="btn-primary text-sm py-2">Generate Report</button>
+                                        <button class="btn-secondary text-sm py-2">Export Data</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Administration Tab -->
+                <div id="system-admin" class="tab-content hidden">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-text-primary mb-6">System Administration</h3>
+                            <p class="text-text-secondary mb-8">
+                                Comprehensive system management with role-based access control, security monitoring, 
+                                and seamless integration capabilities for enterprise-grade operations.
+                            </p>
+
+                            <!-- Feature List -->
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Role-Based Access</h4>
+                                        <p class="text-text-secondary">Granular permission control with customizable roles and security policies.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">API Integration</h4>
+                                        <p class="text-text-secondary">Seamless connectivity with third-party systems and custom applications.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary mb-2">Security Monitoring</h4>
+                                        <p class="text-text-secondary">Real-time security monitoring with audit trails and compliance reporting.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Demo Preview -->
+                        <div class="relative">
+                            <div class="bg-background rounded-xl shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+                                <div class="bg-secondary text-white py-4 px-6 rounded-t-lg font-semibold">
+                                    System Administration
+                                </div>
+                                <div class="p-6 space-y-4">
+                                    <!-- User Management -->
+                                    <div class="bg-surface border border-border rounded-lg p-4">
+                                        <h4 class="font-semibold text-text-primary mb-3">Active Users</h4>
+                                        <div class="space-y-2">
+                                            <div class="flex justify-between items-center">
+                                                <div class="flex items-center">
+                                                    <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center mr-3">
+                                                        <span class="text-primary-600 text-sm font-semibold">JD</span>
+                                                    </div>
+                                                    <div>
+                                                        <div class="text-sm font-semibold">John Doe</div>
+                                                        <div class="text-xs text-text-secondary">Operations Manager</div>
+                                                    </div>
+                                                </div>
+                                                <span class="px-2 py-1 bg-success-100 text-success-700 rounded text-xs">Online</span>
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <div class="flex items-center">
+                                                    <div class="w-8 h-8 bg-secondary-100 rounded-full flex items-center justify-center mr-3">
+                                                        <span class="text-secondary-600 text-sm font-semibold">SM</span>
+                                                    </div>
+                                                    <div>
+                                                        <div class="text-sm font-semibold">Sarah Miller</div>
+                                                        <div class="text-xs text-text-secondary">Customer Service</div>
+                                                    </div>
+                                                </div>
+                                                <span class="px-2 py-1 bg-warning-100 text-warning-700 rounded text-xs">Away</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- System Status -->
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div class="dashboard-metric text-center">
+                                            <div class="text-lg font-bold text-success-600">99.9%</div>
+                                            <div class="text-xs text-text-secondary">Uptime</div>
+                                        </div>
+                                        <div class="dashboard-metric text-center">
+                                            <div class="text-lg font-bold text-primary-600">247</div>
+                                            <div class="text-xs text-text-secondary">Active Sessions</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Quick Actions -->
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <button class="btn-primary text-sm py-2">Manage Users</button>
+                                        <button class="btn-secondary text-sm py-2">View Logs</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">
+                    Traditional vs. Modern Airline Management
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    See how AirlineHub Pro transforms outdated airline management processes into streamlined, efficient workflows.
+                </p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="data-table w-full">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Feature</th>
+                            <th class="text-center">Traditional Systems</th>
+                            <th class="text-center">AirlineHub Pro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-semibold">Flight Scheduling</td>
+                            <td class="text-center">
+                                <div class="flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-error-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Manual spreadsheets
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Drag-and-drop interface
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Real-time Updates</td>
+                            <td class="text-center">
+                                <div class="flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-error-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Manual phone calls
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Instant notifications
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Revenue Optimization</td>
+                            <td class="text-center">
+                                <div class="flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-error-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Static pricing
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    AI-powered dynamic pricing
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Mobile Access</td>
+                            <td class="text-center">
+                                <div class="flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-error-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Desktop only
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Full mobile companion app
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold">Integration Capabilities</td>
+                            <td class="text-center">
+                                <div class="flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-error-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Limited or none
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Comprehensive API ecosystem
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Ecosystem -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">
+                    Seamless Integration Ecosystem
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Connect with essential airline industry systems and services through our comprehensive API platform.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Payment Systems -->
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Payment Processors</h3>
+                    <p class="text-text-secondary text-sm mb-4">Stripe, PayPal, Square, and major credit card processors</p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded text-xs">Stripe</span>
+                        <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded text-xs">PayPal</span>
+                        <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded text-xs">Square</span>
+                    </div>
+                </div>
+
+                <!-- Weather Services -->
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Weather Services</h3>
+                    <p class="text-text-secondary text-sm mb-4">Real-time weather data and forecasting services</p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="px-2 py-1 bg-secondary-100 text-secondary-700 rounded text-xs">NOAA</span>
+                        <span class="px-2 py-1 bg-secondary-100 text-secondary-700 rounded text-xs">AccuWeather</span>
+                        <span class="px-2 py-1 bg-secondary-100 text-secondary-700 rounded text-xs">Weather API</span>
+                    </div>
+                </div>
+
+                <!-- Airport Systems -->
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Airport Systems</h3>
+                    <p class="text-text-secondary text-sm mb-4">Gate management, baggage handling, and ground services</p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="px-2 py-1 bg-accent-100 text-accent-700 rounded text-xs">ARINC</span>
+                        <span class="px-2 py-1 bg-accent-100 text-accent-700 rounded text-xs">SITA</span>
+                        <span class="px-2 py-1 bg-accent-100 text-accent-700 rounded text-xs">IATA</span>
+                    </div>
+                </div>
+
+                <!-- Regulatory Systems -->
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-success-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Regulatory Compliance</h3>
+                    <p class="text-text-secondary text-sm mb-4">FAA, EASA, and international aviation authorities</p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="px-2 py-1 bg-success-100 text-success-700 rounded text-xs">FAA</span>
+                        <span class="px-2 py-1 bg-success-100 text-success-700 rounded text-xs">EASA</span>
+                        <span class="px-2 py-1 bg-success-100 text-success-700 rounded text-xs">ICAO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Responsiveness Demo -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">
+                    Mobile-First Operations Management
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Manage your airline operations on-the-go with our comprehensive mobile companion app.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 items-center">
+                <!-- Mobile Device Mockups -->
+                <div class="lg:col-span-2">
+                    <div class="flex justify-center space-x-8">
+                        <!-- Phone Mockup 1 -->
+                        <div class="relative">
+                            <div class="w-64 h-128 bg-text-primary rounded-3xl p-2 shadow-2xl">
+                                <div class="w-full h-full bg-surface rounded-2xl overflow-hidden">
+                                    <div class="bg-primary text-white p-4 text-center">
+                                        <h4 class="font-semibold">Flight Operations</h4>
+                                    </div>
+                                    <div class="p-4 space-y-3">
+                                        <div class="bg-success-50 border border-success-200 rounded-lg p-3">
+                                            <div class="flex justify-between items-center">
+                                                <span class="font-operational text-sm">AA1234</span>
+                                                <span class="text-xs text-success-600">On Time</span>
+                                            </div>
+                                            <div class="text-xs text-text-secondary">LAX → JFK</div>
+                                        </div>
+                                        <div class="bg-warning-50 border border-warning-200 rounded-lg p-3">
+                                            <div class="flex justify-between items-center">
+                                                <span class="font-operational text-sm">UA5678</span>
+                                                <span class="text-xs text-warning-600">Delayed</span>
+                                            </div>
+                                            <div class="text-xs text-text-secondary">ORD → DFW</div>
+                                        </div>
+                                        <div class="bg-primary-50 border border-primary-200 rounded-lg p-3">
+                                            <div class="flex justify-between items-center">
+                                                <span class="font-operational text-sm">DL9012</span>
+                                                <span class="text-xs text-primary-600">Boarding</span>
+                                            </div>
+                                            <div class="text-xs text-text-secondary">ATL → SEA</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone Mockup 2 -->
+                        <div class="relative">
+                            <div class="w-64 h-128 bg-text-primary rounded-3xl p-2 shadow-2xl">
+                                <div class="w-full h-full bg-surface rounded-2xl overflow-hidden">
+                                    <div class="bg-secondary text-white p-4 text-center">
+                                        <h4 class="font-semibold">Analytics Dashboard</h4>
+                                    </div>
+                                    <div class="p-4 space-y-3">
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <div class="dashboard-metric text-center">
+                                                <div class="text-lg font-bold text-primary-600">94.2%</div>
+                                                <div class="text-xs text-text-secondary">On-Time</div>
+                                            </div>
+                                            <div class="dashboard-metric text-center">
+                                                <div class="text-lg font-bold text-success-600">$2.4M</div>
+                                                <div class="text-xs text-text-secondary">Revenue</div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-gradient-operational rounded-lg p-4 h-32 flex items-center justify-center">
+                                            <svg class="w-12 h-12 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Features -->
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-text-primary mb-2">Native Mobile App</h4>
+                            <p class="text-text-secondary">Full-featured iOS and Android apps with offline capabilities for critical operations.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM4.828 4.828A4 4 0 015.5 4H9v1H5.5a3 3 0 00-2.121.879l-.707.707A1 1 0 012 6.5V10H1V6.5a2 2 0 01.586-1.414l.707-.707z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-text-primary mb-2">Real-Time Sync</h4>
+                            <p class="text-text-secondary">Instant synchronization between desktop and mobile platforms for seamless operations.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM4.828 4.828A4 4 0 015.5 4H9v1H5.5a3 3 0 00-2.121.879l-.707.707A1 1 0 012 6.5V10H1V6.5a2 2 0 01.586-1.414l.707-.707z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-text-primary mb-2">Push Notifications</h4>
+                            <p class="text-text-secondary">Critical alerts and updates delivered instantly to keep operations running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">
+                    Enterprise-Grade Technical Specifications
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Built for mission-critical airline operations with industry-leading performance and reliability standards.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Uptime -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-success-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-success-600 mb-2">99.99%</div>
+                    <div class="text-text-secondary">Uptime Guarantee</div>
+                </div>
+
+                <!-- Response Time -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-primary-600 mb-2">&lt;200ms</div>
+                    <div class="text-text-secondary">Average Response Time</div>
+                </div>
+
+                <!-- Security -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-secondary-600 mb-2">SOC 2</div>
+                    <div class="text-text-secondary">Type II Certified</div>
+                </div>
+
+                <!-- Scalability -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-accent-600 mb-2">10M+</div>
+                    <div class="text-text-secondary">Passengers/Month</div>
+                </div>
+            </div>
+
+            <!-- Additional Specifications -->
+            <div class="mt-16 grid md:grid-cols-3 gap-8">
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-text-primary mb-4">Security & Compliance</h3>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            SOC 2 Type II Certification
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            GDPR & CCPA Compliant
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            256-bit SSL Encryption
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Multi-Factor Authentication
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-text-primary mb-4">Performance & Reliability</h3>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            99.99% Uptime SLA
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Global CDN Network
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Auto-scaling Infrastructure
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            24/7 System Monitoring
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-text-primary mb-4">Support & Training</h3>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            24/7 Priority Support
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Dedicated Account Manager
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Comprehensive Training Program
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            API Documentation & SDKs
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-aviation text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                Ready to Transform Your Airline Operations?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Experience the power of AirlineHub Pro with a personalized demo tailored to your airline's specific needs and operations.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_demo_request.html" class="btn-accent text-lg px-8 py-4">
+                    Schedule Live Demo
+                </a>
+                <a href="pricing_plans.html" class="bg-white text-primary font-semibold text-lg px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors">
+                    View Pricing Plans
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L4 8v16l12 6 12-6V8L16 2zm0 2.5L25.5 9 16 13.5 6.5 9 16 4.5zm-10 6.5L14 15v11L6 22V11zm20 0v11l-8 4V15l8-4z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold">AirlineHub Pro</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Transforming airline operations through innovative web-based solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2">
+                        <li><a href="platform_overview.html" class="text-gray-300 hover:text-primary transition-colors">Overview</a></li>
+                        <li><a href="platform_overview.html" class="text-gray-300 hover:text-primary transition-colors">Operations</a></li>
+                        <li><a href="platform_overview.html" class="text-gray-300 hover:text-primary transition-colors">Passenger Experience</a></li>
+                        <li><a href="platform_overview.html" class="text-gray-300 hover:text-primary transition-colors">Analytics</a></li>
+                        <li><a href="security_compliance.html" class="text-gray-300 hover:text-primary transition-colors">Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="customer_success_stories.html" class="text-gray-300 hover:text-primary transition-colors">Success Stories</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors">API Reference</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Support Center</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Training</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact_demo_request.html" class="text-gray-300 hover:text-primary transition-colors">Request Demo</a></li>
+                        <li><a href="pricing_plans.html" class="text-gray-300 hover:text-primary transition-colors">Pricing</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Sales</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Support</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition-colors">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 text-sm">
+                    © 2025 AirlineHub Pro. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-300 hover:text-primary text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-300 hover:text-primary text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-300 hover:text-primary text-sm transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Tab functionality
+        function showTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all tab buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.classList.remove('active', 'border-primary', 'text-primary');
+                button.classList.add('border-transparent', 'text-text-secondary');
+            });
+
+            // Show selected tab content
+            const selectedTab = document.getElementById(tabId);
+            if (selectedTab) {
+                selectedTab.classList.remove('hidden');
+                selectedTab.classList.add('active');
+            }
+
+            // Add active class to clicked button
+            const clickedButton = event.target;
+            clickedButton.classList.add('active', 'border-primary', 'text-primary');
+            clickedButton.classList.remove('border-transparent', 'text-text-secondary');
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set first tab as active by default
+            const firstTab = document.querySelector('.tab-button');
+            if (firstTab) {
+                firstTab.click();
+            }
+
+            // Add smooth scrolling for anchor links
+            const anchorLinks = document.querySelectorAll('a[href^="#"]');
+            anchorLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for animation
+            const animateElements = document.querySelectorAll('.card, .tab-content');
+            animateElements.forEach(el => observer.observe(el));
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

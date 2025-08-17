@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security & Compliance - AirlineHub Pro</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Enterprise-grade security and compliance for airline operations. SOC 2 Type II, ISO 27001, GDPR compliant with aviation-specific security standards." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fairlinehub1355back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-md border-b border-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L4 8v16l12 6 12-6V8L16 2zm0 2.5L25.5 9 16 13.5 6.5 9 16 4.5zm-10 6.5L14 15v11L6 22V11zm20 0v11l-8 4V15l8-4z"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-bold text-primary">AirlineHub Pro</h1>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Home</a>
+                        <a href="platform_overview.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Platform</a>
+                        <a href="customer_success_stories.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Success Stories</a>
+                        <a href="pricing_plans.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Pricing</a>
+                        <a href="security_compliance.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Security</a>
+                        <a href="contact_demo_request.html" class="btn-primary">Request Demo</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Home</a>
+                <a href="platform_overview.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Platform</a>
+                <a href="customer_success_stories.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Success Stories</a>
+                <a href="pricing_plans.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Pricing</a>
+                <a href="security_compliance.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Security</a>
+                <a href="contact_demo_request.html" class="btn-primary block text-center mx-3 my-2">Request Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-aviation text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <div class="mb-8">
+                    <div class="inline-flex items-center px-4 py-2 bg-white bg-opacity-20 rounded-full text-sm font-medium mb-6">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        Enterprise-Grade Security
+                    </div>
+                </div>
+                <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-6">
+                    Security & Compliance
+                    <span class="block text-accent-300">Built for Aviation</span>
+                </h1>
+                <p class="text-xl text-blue-100 leading-relaxed max-w-3xl mx-auto mb-8">
+                    Meet the stringent security requirements of airline operations with comprehensive data protection, 
+                    regulatory compliance, and industry-leading security standards designed specifically for aviation.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact_demo_request.html" class="btn-accent text-lg px-8 py-4">
+                        Security Assessment
+                    </a>
+                    <a href="#certifications" class="bg-white text-primary font-semibold text-lg px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors">
+                        View Certifications
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Certifications -->
+    <section id="certifications" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">
+                    Industry-Leading Certifications
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Our platform meets and exceeds the most rigorous security standards required for airline operations worldwide.
+                </p>
+            </div>
+
+            <!-- Certification Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <!-- SOC 2 Type II -->
+                <div class="bg-background rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">SOC 2 Type II</h3>
+                    <p class="text-text-secondary mb-4">Comprehensive security controls audit covering security, availability, and confidentiality.</p>
+                    <div class="text-sm text-success-600 font-semibold">Certified 2024</div>
+                </div>
+
+                <!-- ISO 27001 -->
+                <div class="bg-background rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">ISO 27001</h3>
+                    <p class="text-text-secondary mb-4">International standard for information security management systems and risk management.</p>
+                    <div class="text-sm text-success-600 font-semibold">Certified 2024</div>
+                </div>
+
+                <!-- GDPR Compliance -->
+                <div class="bg-background rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">GDPR Compliant</h3>
+                    <p class="text-text-secondary mb-4">Full compliance with European data protection regulations for passenger data handling.</p>
+                    <div class="text-sm text-success-600 font-semibold">Verified 2024</div>
+                </div>
+
+                <!-- Aviation Security -->
+                <div class="bg-background rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">Aviation Standards</h3>
+                    <p class="text-text-secondary mb-4">TSA security requirements, IATA data standards, and international aviation regulations.</p>
+                    <div class="text-sm text-success-600 font-semibold">Compliant 2024</div>
+                </div>
+            </div>
+
+            <!-- Trust Metrics -->
+            <div class="bg-gradient-operational rounded-xl p-8">
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-primary mb-2">99.9%</div>
+                        <div class="text-text-secondary">Uptime SLA</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-primary mb-2">256-bit</div>
+                        <div class="text-text-secondary">AES Encryption</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-primary mb-2">24/7</div>
+                        <div class="text-text-secondary">Security Monitoring</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-primary mb-2">Zero</div>
+                        <div class="text-text-secondary">Data Breaches</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Protection Measures -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">
+                    Multi-Layered Data Protection
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Comprehensive security architecture designed to protect sensitive airline operations and passenger data at every level.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Security Diagram -->
+                <div class="relative">
+                    <div class="bg-surface rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-text-primary mb-6 text-center">Security Architecture</h3>
+                        
+                        <!-- Layer 1: Application Layer -->
+                        <div class="mb-6 p-4 bg-primary-50 rounded-lg border-l-4 border-primary">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                                    <span class="text-white font-bold text-sm">1</span>
+                                </div>
+                                <h4 class="font-semibold text-text-primary">Application Layer</h4>
+                            </div>
+                            <ul class="text-sm text-text-secondary space-y-1 ml-11">
+                                <li>• Role-based access controls (RBAC)</li>
+                                <li>• Multi-factor authentication (MFA)</li>
+                                <li>• Session management & timeout</li>
+                                <li>• Input validation & sanitization</li>
+                            </ul>
+                        </div>
+
+                        <!-- Layer 2: Transport Layer -->
+                        <div class="mb-6 p-4 bg-secondary-50 rounded-lg border-l-4 border-secondary">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mr-3">
+                                    <span class="text-white font-bold text-sm">2</span>
+                                </div>
+                                <h4 class="font-semibold text-text-primary">Transport Layer</h4>
+                            </div>
+                            <ul class="text-sm text-text-secondary space-y-1 ml-11">
+                                <li>• TLS 1.3 encryption in transit</li>
+                                <li>• Certificate pinning</li>
+                                <li>• API authentication tokens</li>
+                                <li>• Webhook signature validation</li>
+                            </ul>
+                        </div>
+
+                        <!-- Layer 3: Data Layer -->
+                        <div class="mb-6 p-4 bg-accent-50 rounded-lg border-l-4 border-accent">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center mr-3">
+                                    <span class="text-white font-bold text-sm">3</span>
+                                </div>
+                                <h4 class="font-semibold text-text-primary">Data Layer</h4>
+                            </div>
+                            <ul class="text-sm text-text-secondary space-y-1 ml-11">
+                                <li>• AES-256 encryption at rest</li>
+                                <li>• Database access controls</li>
+                                <li>• Automated backups</li>
+                                <li>• Data anonymization</li>
+                            </ul>
+                        </div>
+
+                        <!-- Layer 4: Infrastructure Layer -->
+                        <div class="p-4 bg-success-50 rounded-lg border-l-4 border-success">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-success rounded-full flex items-center justify-center mr-3">
+                                    <span class="text-white font-bold text-sm">4</span>
+                                </div>
+                                <h4 class="font-semibold text-text-primary">Infrastructure Layer</h4>
+                            </div>
+                            <ul class="text-sm text-text-secondary space-y-1 ml-11">
+                                <li>• Network segmentation</li>
+                                <li>• Firewall protection</li>
+                                <li>• DDoS mitigation</li>
+                                <li>• Intrusion detection systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Features -->
+                <div class="space-y-8">
+                    <!-- Encryption -->
+                    <div class="bg-surface rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary">End-to-End Encryption</h3>
+                                <p class="text-text-secondary">AES-256 encryption for data at rest and TLS 1.3 for data in transit</p>
+                            </div>
+                        </div>
+                        <div class="bg-background p-4 rounded-lg">
+                            <div class="text-sm font-mono text-text-secondary">
+                                <div class="text-success-600">✓ Passenger data encrypted</div>
+                                <div class="text-success-600">✓ Flight data secured</div>
+                                <div class="text-success-600">✓ Financial transactions protected</div>
+                                <div class="text-success-600">✓ API communications encrypted</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Access Controls -->
+                    <div class="bg-surface rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary">Role-Based Access Control</h3>
+                                <p class="text-text-secondary">Granular permissions based on job functions and responsibilities</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-background p-3 rounded-lg text-center">
+                                <div class="text-2xl font-bold text-primary">15+</div>
+                                <div class="text-sm text-text-secondary">Role Types</div>
+                            </div>
+                            <div class="bg-background p-3 rounded-lg text-center">
+                                <div class="text-2xl font-bold text-primary">MFA</div>
+                                <div class="text-sm text-text-secondary">Required</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monitoring -->
+                    <div class="bg-surface rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary">24/7 Security Monitoring</h3>
+                                <p class="text-text-secondary">Real-time threat detection and automated incident response</p>
+                            </div>
+                        </div>
+                        <div class="bg-background p-4 rounded-lg">
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-text-secondary">Security Events Today</span>
+                                <span class="text-success-600 font-semibold">0 Threats Detected</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Frameworks -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">
+                    Aviation Compliance Frameworks
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Comprehensive compliance with international aviation regulations and industry standards across all operational areas.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- TSA Security -->
+                <div class="bg-background rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">TSA Security Requirements</h3>
+                    <ul class="space-y-3 text-text-secondary">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Secure Flight Program compliance
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Passenger screening database integration
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Security threat assessment protocols
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Cybersecurity framework adherence
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- IATA Standards -->
+                <div class="bg-background rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">IATA Data Standards</h3>
+                    <ul class="space-y-3 text-text-secondary">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            NDC (New Distribution Capability)
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Passenger Service System standards
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Baggage tracking protocols
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Revenue accounting standards
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- International Regulations -->
+                <div class="bg-background rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">International Aviation</h3>
+                    <ul class="space-y-3 text-text-secondary">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            ICAO Annex 17 security standards
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            EU Aviation Safety regulations
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            FAA operational requirements
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Cross-border data transfer protocols
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audit Trail & Business Continuity -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Audit Trail -->
+                <div>
+                    <h2 class="text-3xl font-bold text-text-primary mb-6">
+                        Comprehensive Audit Trail
+                    </h2>
+                    <p class="text-xl text-text-secondary mb-8">
+                        Every system action is logged and traceable for complete regulatory compliance and operational transparency.
+                    </p>
+
+                    <div class="bg-surface rounded-xl p-6 shadow-lg mb-8">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Audit Capabilities</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-success-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-text-primary">User Activity Tracking</div>
+                                    <div class="text-sm text-text-secondary">Complete log of all user actions and system interactions</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-success-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-text-primary">Data Change History</div>
+                                    <div class="text-sm text-text-secondary">Immutable record of all data modifications with timestamps</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-success-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-text-primary">Regulatory Reporting</div>
+                                    <div class="text-sm text-text-secondary">Automated compliance reports for aviation authorities</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-success-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-text-primary">Forensic Analysis</div>
+                                    <div class="text-sm text-text-secondary">Advanced search and analysis tools for investigations</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sample Audit Log -->
+                    <div class="bg-surface rounded-xl p-6 shadow-lg">
+                        <h4 class="font-semibold text-text-primary mb-4">Recent Audit Events</h4>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <div>
+                                    <div class="font-medium text-text-primary">Flight AA1234 schedule updated</div>
+                                    <div class="text-text-secondary">User: operations.manager@airline.com</div>
+                                </div>
+                                <div class="text-text-secondary">2 min ago</div>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <div>
+                                    <div class="font-medium text-text-primary">Passenger data accessed</div>
+                                    <div class="text-text-secondary">User: customer.service@airline.com</div>
+                                </div>
+                                <div class="text-text-secondary">15 min ago</div>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <div>
+                                    <div class="font-medium text-text-primary">Security policy updated</div>
+                                    <div class="text-text-secondary">User: security.admin@airline.com</div>
+                                </div>
+                                <div class="text-text-secondary">1 hour ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Continuity -->
+                <div>
+                    <h2 class="text-3xl font-bold text-text-primary mb-6">
+                        Business Continuity Planning
+                    </h2>
+                    <p class="text-xl text-text-secondary mb-8">
+                        Robust disaster recovery and business continuity measures ensure uninterrupted airline operations.
+                    </p>
+
+                    <!-- SLA Metrics -->
+                    <div class="bg-surface rounded-xl p-6 shadow-lg mb-8">
+                        <h3 class="text-lg font-semibold text-text-primary mb-6">Service Level Agreements</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-success-600 mb-2">99.9%</div>
+                                <div class="text-text-secondary">Uptime Guarantee</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-success-600 mb-2">&lt; 4h</div>
+                                <div class="text-text-secondary">Recovery Time</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-success-600 mb-2">&lt; 1h</div>
+                                <div class="text-text-secondary">Recovery Point</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-success-600 mb-2">24/7</div>
+                                <div class="text-text-secondary">Support Coverage</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Continuity Features -->
+                    <div class="bg-surface rounded-xl p-6 shadow-lg">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Continuity Features</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center mr-3 mt-1">
+                                    <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-text-primary">Redundant Data Centers</div>
+                                    <div class="text-sm text-text-secondary">Multiple geographically distributed data centers with real-time replication</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-secondary-100 rounded-full flex items-center justify-center mr-3 mt-1">
+                                    <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-text-primary">Automated Backups</div>
+                                    <div class="text-sm text-text-secondary">Continuous data backup with point-in-time recovery capabilities</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mr-3 mt-1">
+                                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-text-primary">Failover Systems</div>
+                                    <div class="text-sm text-text-secondary">Automatic failover to backup systems with minimal service interruption</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center mr-3 mt-1">
+                                    <svg class="w-4 h-4 text-success-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-text-primary">Incident Response</div>
+                                    <div class="text-sm text-text-secondary">24/7 incident response team with escalation procedures</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy & Data Protection -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">
+                    Privacy & Data Protection
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Comprehensive privacy protection measures for passenger data with full compliance to international data protection regulations.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Data Retention -->
+                <div class="bg-background rounded-xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Data Retention Policies</h3>
+                    <ul class="space-y-3 text-text-secondary">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Automated data lifecycle management
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Regulatory-compliant retention periods
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Secure data archival and disposal
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Audit trail for data operations
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right to Deletion -->
+                <div class="bg-background rounded-xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Right to Deletion</h3>
+                    <ul class="space-y-3 text-text-secondary">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            GDPR Article 17 compliance
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Automated deletion workflows
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Verification and confirmation processes
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Cross-system data removal
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cross-Border Transfer -->
+                <div class="bg-background rounded-xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Cross-Border Transfers</h3>
+                    <ul class="space-y-3 text-text-secondary">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Standard Contractual Clauses (SCCs)
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Adequacy decision compliance
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Data localization requirements
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Transfer impact assessments
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Security -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">
+                    Integration Security
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Secure connections to third-party airline systems with enterprise-grade API security and validation protocols.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Security Features -->
+                <div class="space-y-8">
+                    <!-- API Authentication -->
+                    <div class="bg-surface rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m0 0a2 2 0 012 2m-2-2a2 2 0 00-2 2m2-2V5a2 2 0 00-2-2m-2 4h.01M5 15a2 2 0 012-2m0 0a2 2 0 012 2m-2-2a2 2 0 00-2 2m2-2V9a2 2 0 00-2-2m4 6h4"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary">API Authentication</h3>
+                                <p class="text-text-secondary">OAuth 2.0 and JWT token-based authentication</p>
+                            </div>
+                        </div>
+                        <div class="bg-background p-4 rounded-lg">
+                            <div class="text-sm font-mono text-text-secondary">
+                                <div class="text-success-600">✓ OAuth 2.0 / OpenID Connect</div>
+                                <div class="text-success-600">✓ JWT token validation</div>
+                                <div class="text-success-600">✓ API key management</div>
+                                <div class="text-success-600">✓ Rate limiting & throttling</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Webhook Security -->
+                    <div class="bg-surface rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary">Webhook Validation</h3>
+                                <p class="text-text-secondary">HMAC signature verification for all webhooks</p>
+                            </div>
+                        </div>
+                        <div class="bg-background p-4 rounded-lg">
+                            <div class="text-sm font-mono text-text-secondary">
+                                <div class="text-success-600">✓ HMAC-SHA256 signatures</div>
+                                <div class="text-success-600">✓ Timestamp validation</div>
+                                <div class="text-success-600">✓ Payload integrity checks</div>
+                                <div class="text-success-600">✓ Replay attack prevention</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third-Party Connections -->
+                    <div class="bg-surface rounded-xl p-6 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary">Secure Connections</h3>
+                                <p class="text-text-secondary">Encrypted connections to airline systems</p>
+                            </div>
+                        </div>
+                        <div class="bg-background p-4 rounded-lg">
+                            <div class="text-sm font-mono text-text-secondary">
+                                <div class="text-success-600">✓ VPN tunnel connections</div>
+                                <div class="text-success-600">✓ Mutual TLS authentication</div>
+                                <div class="text-success-600">✓ IP whitelisting</div>
+                                <div class="text-success-600">✓ Connection monitoring</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integration Architecture -->
+                <div class="bg-surface rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-text-primary mb-6 text-center">Secure Integration Architecture</h3>
+                    
+                    <!-- Integration Flow -->
+                    <div class="space-y-6">
+                        <!-- External Systems -->
+                        <div class="text-center">
+                            <div class="inline-flex items-center px-4 py-2 bg-secondary-100 rounded-lg text-sm font-semibold text-secondary">
+                                External Airline Systems
+                            </div>
+                        </div>
+
+                        <!-- Arrow Down -->
+                        <div class="text-center">
+                            <svg class="w-6 h-6 text-text-secondary mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                            </svg>
+                        </div>
+
+                        <!-- Security Gateway -->
+                        <div class="bg-primary-50 rounded-lg p-4 border-2 border-primary-200">
+                            <div class="text-center font-semibold text-primary mb-3">Security Gateway</div>
+                            <div class="grid grid-cols-2 gap-3 text-xs">
+                                <div class="bg-white p-2 rounded text-center">Authentication</div>
+                                <div class="bg-white p-2 rounded text-center">Authorization</div>
+                                <div class="bg-white p-2 rounded text-center">Validation</div>
+                                <div class="bg-white p-2 rounded text-center">Encryption</div>
+                            </div>
+                        </div>
+
+                        <!-- Arrow Down -->
+                        <div class="text-center">
+                            <svg class="w-6 h-6 text-text-secondary mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                            </svg>
+                        </div>
+
+                        <!-- AirlineHub Pro -->
+                        <div class="text-center">
+                            <div class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg text-sm font-semibold">
+                                AirlineHub Pro Platform
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Integration Stats -->
+                    <div class="mt-8 pt-6 border-t border-border">
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div>
+                                <div class="text-2xl font-bold text-primary">50+</div>
+                                <div class="text-sm text-text-secondary">Integrations</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-primary">99.9%</div>
+                                <div class="text-sm text-text-secondary">API Uptime</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-primary">&lt;100ms</div>
+                                <div class="text-sm text-text-secondary">Response Time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Documentation & Resources -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-text-primary mb-6">
+                    Security Documentation & Resources
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Comprehensive security documentation, compliance checklists, and incident response procedures for your IT teams.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Security Documentation -->
+                <div class="bg-background rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Security Documentation</h3>
+                    <p class="text-text-secondary mb-6">
+                        Comprehensive security guides, architecture documentation, and implementation best practices.
+                    </p>
+                    <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                        <li>• Security Architecture Guide</li>
+                        <li>• Implementation Checklist</li>
+                        <li>• Best Practices Manual</li>
+                        <li>• API Security Guidelines</li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn-outline w-full text-center">
+                        Download Documentation
+                    </a>
+                </div>
+
+                <!-- Compliance Checklists -->
+                <div class="bg-background rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Compliance Checklists</h3>
+                    <p class="text-text-secondary mb-6">
+                        Ready-to-use compliance checklists for various regulatory requirements and audit preparations.
+                    </p>
+                    <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                        <li>• SOC 2 Readiness Checklist</li>
+                        <li>• GDPR Compliance Guide</li>
+                        <li>• Aviation Security Checklist</li>
+                        <li>• Audit Preparation Kit</li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn-outline w-full text-center">
+                        Access Checklists
+                    </a>
+                </div>
+
+                <!-- Incident Response -->
+                <div class="bg-background rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Incident Response</h3>
+                    <p class="text-text-secondary mb-6">
+                        Detailed incident response procedures, escalation protocols, and emergency contact information.
+                    </p>
+                    <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                        <li>• Incident Response Plan</li>
+                        <li>• Escalation Procedures</li>
+                        <li>• Emergency Contacts</li>
+                        <li>• Recovery Protocols</li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn-outline w-full text-center">
+                        View Procedures
+                    </a>
+                </div>
+
+                <!-- Security Updates -->
+                <div class="bg-background rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-success-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-success-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Security Updates</h3>
+                    <p class="text-text-secondary mb-6">
+                        Regular security updates, patch management schedules, and vulnerability assessment reports.
+                    </p>
+                    <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                        <li>• Monthly Security Updates</li>
+                        <li>• Patch Management Schedule</li>
+                        <li>• Vulnerability Reports</li>
+                        <li>• Security Bulletins</li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn-outline w-full text-center">
+                        View Updates
+                    </a>
+                </div>
+
+                <!-- Penetration Testing -->
+                <div class="bg-background rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Penetration Testing</h3>
+                    <p class="text-text-secondary mb-6">
+                        Regular penetration testing schedules, security assessment reports, and remediation tracking.
+                    </p>
+                    <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                        <li>• Quarterly Penetration Tests</li>
+                        <li>• Vulnerability Assessments</li>
+                        <li>• Security Scan Reports</li>
+                        <li>• Remediation Tracking</li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn-outline w-full text-center">
+                        View Reports
+                    </a>
+                </div>
+
+                <!-- Training Resources -->
+                <div class="bg-background rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-4">Training Resources</h3>
+                    <p class="text-text-secondary mb-6">
+                        Security awareness training materials, certification programs, and ongoing education resources.
+                    </p>
+                    <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                        <li>• Security Awareness Training</li>
+                        <li>• Certification Programs</li>
+                        <li>• Video Training Library</li>
+                        <li>• Knowledge Base</li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn-outline w-full text-center">
+                        Access Training
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-aviation text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                Ready to Secure Your Airline Operations?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Get a comprehensive security assessment and learn how AirlineHub Pro can meet your airline's 
+                specific security and compliance requirements.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_demo_request.html" class="btn-accent text-lg px-8 py-4">
+                    Request Security Assessment
+                </a>
+                <a href="contact_demo_request.html" class="bg-white text-primary font-semibold text-lg px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors">
+                    Schedule Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L4 8v16l12 6 12-6V8L16 2zm0 2.5L25.5 9 16 13.5 6.5 9 16 4.5zm-10 6.5L14 15v11L6 22V11zm20 0v11l-8 4V15l8-4z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold">AirlineHub Pro</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Transforming airline operations through innovative web-based solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2">
+                        <li><a href="platform_overview.html" class="text-gray-300 hover:text-primary transition-colors">Overview</a></li>
+                        <li><a href="platform_overview.html" class="text-gray-300 hover:text-primary transition-colors">Operations</a></li>
+                        <li><a href="platform_overview.html" class="text-gray-300 hover:text-primary transition-colors">Passenger Experience</a></li>
+                        <li><a href="platform_overview.html" class="text-gray-300 hover:text-primary transition-colors">Analytics</a></li>
+                        <li><a href="security_compliance.html" class="text-gray-300 hover:text-primary transition-colors">Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="customer_success_stories.html" class="text-gray-300 hover:text-primary transition-colors">Success Stories</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Documentation</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">API Reference</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Support Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Training</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact_demo_request.html" class="text-gray-300 hover:text-primary transition-colors">Request Demo</a></li>
+                        <li><a href="pricing_plans.html" class="text-gray-300 hover:text-primary transition-colors">Pricing</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Sales</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Support</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 text-sm">
+                    © 2025 AirlineHub Pro. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-gray-300 hover:text-primary text-sm transition-colors">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-gray-300 hover:text-primary text-sm transition-colors">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-gray-300 hover:text-primary text-sm transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            const anchorLinks = document.querySelectorAll('a[href^="#"]');
+            
+            anchorLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.bg-background, .bg-surface');
+            animateElements.forEach(el => observer.observe(el));
+        });
+
+        // Security metrics counter animation
+        function animateSecurityCounters() {
+            const counters = document.querySelectorAll('[data-counter]');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-counter'));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current);
+                }, 16);
+            });
+        }
+
+        // Initialize animations when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(animateSecurityCounters, 1000);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
